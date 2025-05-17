@@ -1,4 +1,4 @@
-# ---- isi file Python mulai di sini ----
+
 import pandas as pd
 import time, os
 from selenium import webdriver
@@ -47,4 +47,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-# ---- isi file Python selesai di sini ----
+
