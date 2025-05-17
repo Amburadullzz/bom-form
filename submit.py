@@ -6,9 +6,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 
 CHROME_DRIVER_PATH = "/usr/local/bin/chromedriver"
-FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScWaaIiq0ZFarrNf71RUKyFJLwE2RMhRHFmh7XZW6WZGWTBjA/viewform"
+FORM_URL = "linkform"
 CSV_FILE = "data.csv"
-DELAY = 0.05
+DELAY = 0.03
 FIELD_XPATH = '//*[@id="mG61Hd"]/div[2]/div/div[2]/div[1]/div/div/div[2]/div/div[1]/div/div[1]/input'
 
 
@@ -43,7 +43,7 @@ def main():
     for i, addr in enumerate(df['address'], 1):
         print(f"Row {i}/{len(df)}: {addr}")
         submit_row(addr)
-    print("Selesai!")
+    print("Succes!")
 
 if __name__ == "__main__":
     main()
